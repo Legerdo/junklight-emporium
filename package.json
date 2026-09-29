@@ -1,0 +1,29 @@
+{
+  "name": "junklight-emporium",
+  "private": true,
+  "version": "1.0.0",
+  "description": "별고물 상회 — 한국어 2D 픽셀 액티브 인크리멘탈 게임",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 4173",
+    "test": "vitest --run",
+    "sim": "tsx tools/sim.ts",
+    "e2e": "tsx tools/e2e.ts",
+    "shot": "tsx tools/shot.ts",
+    "toolbench": "tsx tools/toolbench.ts"
+  },
+  "dependencies": {
+    "galmuri": "2.40.3",
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.0",
+    "playwright": "1.63.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vite": "7.3.6",
+    "vitest": "3.2.7"
+  }
+}

@@ -1,0 +1,51 @@
+// 상회 팔레트: 재질마다 색 계열을 고정해 한눈에 읽히게 한다.
+// 나무=갈색, 유리=청록, 금속=회청, 천=분홍·보라, 태엽=황동, 별=연노랑.
+export const PAL: Record<string, string> = {
+  '0': '#16111c',
+  '1': '#2e2236',
+  '2': '#4a3642',
+  '3': '#6e4b3a',
+  '4': '#9a6a46',
+  '5': '#c89560',
+  '6': '#ecc88e',
+  '7': '#f7ecd0',
+  '8': '#b0413e',
+  '9': '#e0704a',
+  a: '#f2a33a',
+  b: '#ffd76a',
+  c: '#3a6e7a',
+  d: '#62a8ae',
+  e: '#a9e0da',
+  f: '#e8fbf6',
+  g: '#3d5c3f',
+  h: '#6e9a58',
+  i: '#a7c96a',
+  j: '#3f4456',
+  k: '#6b7288',
+  l: '#a3abbd',
+  m: '#dfe4ee',
+  n: '#28304a',
+  o: '#45568a',
+  p: '#7f98d6',
+  q: '#7a3b5e',
+  r: '#b8628a',
+  s: '#e3a3bf',
+  t: '#8a5a9e',
+  u: '#c794d6',
+  v: '#fff4a8',
+  w: '#fffdf0',
+  x: '#8b4a2b',
+  y: '#c7743a',
+  z: '#5a3d2e',
+};
+
+export const HEX = (k: string) => parseInt(PAL[k].slice(1), 16);
+
+export const MAT_COLOR: Record<string, number> = {
+  wood: HEX('5'),
+  glass: HEX('e'),
+  metal: HEX('l'),
+  cloth: HEX('s'),
+  clock: HEX('b'),
+  star: HEX('v'),
+};
