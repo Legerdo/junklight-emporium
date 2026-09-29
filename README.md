@@ -99,6 +99,10 @@ Playwright 스크립트를 처음 돌릴 때는 `npx playwright install chromium
 
 엔딩 도달은 봇 플레이로 확인했습니다. 실제 사람 대상 플레이 테스트는 아직 하지 않았습니다.
 
+## 제작 프롬프트
+
+이 게임은 AI 코딩 에이전트(Kiro, Claude Opus 5.5)가 하나의 원샷 프롬프트를 받아 기획부터 구현·검증까지 진행해 만들었습니다. 처음 사용한 프롬프트 원문은 [docs/PROMPT.md](docs/PROMPT.md)에 있습니다.
+
 ## 크레딧
 
 - 게임, 그림, 소리: 코드로 직접 제작
